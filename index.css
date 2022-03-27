@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Police de tout ton site (pour la page incluant ce CSS) */
+    margin: 0px; /* Pas de marge */
+    background-color: whitesmoke; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+}
+
+hr { /* Pour la barre horizontale */
+    margin: 0px; /* Pas de marge */
+}
+
+nav { /* Barre de navigation */
+    display: flex; /* Flex */
+    background-color: whitesmoke; /* Couleur de fond */
+    justify-content: space-between; /* propriété du flex. Met les éléments avec le plus d'espace possible entre eux. */
+}
+nav ul { /* Pour les trois liens */
+    list-style: none; /* On veut pas que la liste ait ses points à gauche (enlève ce truc pour voir ce dont je parle si tu vois pas) */
+    display: flex; /* On remet en flex pour les liens internes */
+    align-items: center; /* On veut que les liens soit au centre vertical (align items = vertical) */
+    justify-content: flex-end; /* On veut que les liens soient à droite horizontal (justify content = horizontal) */
+    padding-right: 50px; /* 50 pixels de marge à droite */
+}
+nav img { /* Pour la taille de l'image */
+    width: 100px; /* Longueur de 100px */
+    height: 80px; /* Hauteur de 80 px*/
+}
+nav ul li a { /* Pour les liens */
+    padding: 10px; /* 10 pixels autour de chaque cotés */
+    color: black; /* texte en noir */
+    text-decoration: none; /* Enlever le soulignage */
+}
+nav ul li a:hover { /* Quand tu passe ta souris au dessus du lien */
+    background-color: black; /* Faire passer la couleur de fond en noir */
+    color: white; /* Changer la couleur du texte en blanc */
+}
+
+div { /* Pour l'espace de texte principal */
+    padding-left: 20%; /* On réduit l'espace à gauche de 20% */
+    padding-right: 20%; /* On réduit l'espace à droite de 20% */
+}
+
+div:last-child { /* Pour l'espace avec les deux paragraphes. "last-child" prend le dernier élément */
+    padding: 0;
+    display: flex;
+}
+
+aside p {
+    font-style: italic;
+}
+
+footer { /* Bas de page */
+    display: flex; /* Flex */
+    background-color: black; /* Couleur de fond en noir */
+    align-items: center; /* On veut que les liens soit au centre vertical (align items = vertical) */
+    justify-content: space-between; /* /* On veut que les liens soient espacés entre eux (justify content = horizontal) */
+    position: absolute; /* Position Absolue, voulant dire qu'il se place selon des coordonées spécifique (voir ligne après)  */
+    bottom: 0; /* Place l'objet en bas de l'écran (et le lock à cette position)  */
+    width: 100%; /* Remplir l'objet sur l'entièreté de la longueur de la page */
+}
+footer p { /* Paramètres du paragraphe */
+    padding-left: 50px; /* 50 pixels à sa gauche */
+    color: whitesmoke; /* Couleur de texte blanche */
+}
+footer ul { /* Liste de liens du bas de page */
+    list-style: none; /* Enlever les points de la liste */
+    display: flex; /* Mode flex */
+    padding-right: 50px; /* 50 pixels à gauche */
+}
+footer ul li a { /* Paramètres des liens dans la liste */
+    padding: 10px; /* Espace intérieur tout autour des liens */
+    color: whitesmoke; /* Couleur des liens en blanc */
+    text-decoration: none; /* Enlever le soulignage normal des liens */
+}
+footer ul li a:hover { /* Quand tu met ta souris au dessus des liens */
+    background-color: whitesmoke; /* Couleur de fond en blanc */
+    color: black; /* Couleur du texte en noir */
+}
